@@ -1,6 +1,6 @@
 package br.com.fiap.epictask.utils;
 
-import br.com.fiap.epictask.model.Usuario;
+import br.com.fiap.epictask.model.User;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -13,7 +13,7 @@ public class StringUtils {
      * @param usuario
      * @return boolean
      */
-    public static boolean validarPatternSenha(Usuario usuario) {
+    public static boolean validarPatternSenha(User usuario) {
         final String senhaPattern = "^(?=(?:[^A-Z]*[A-Z]){1})(?=[^!@#$%^&*()+-]*[!@#$%^&*()+-])(?=(?:[^0-9]*[0-9]){1}).{8,}$";
 
 

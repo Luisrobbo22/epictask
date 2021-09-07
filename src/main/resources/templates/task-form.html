@@ -2,7 +2,7 @@
 <html xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>New Task</title>
 </head>
     <body>
 
@@ -12,19 +12,25 @@
 
 
         <form action="/task" method="post" th:object="${task}">
-            <label for="title">Título</label>
-            <input id="title" name="title" th:field="*{title}">
-            <span th:errors="*{title}"></span>
+            <div>
+                <label for="title">Título</label> <br>
+                <input id="title" name="title" th:field="*{title}">
+                <span th:errors="*{title}"></span>
+            </div>
 
-            <label for="description">Descrição</label>
-            <textarea id="description" name="description"
-                      rows="" cols=""  th:field="*{description}"></textarea>
-            <span th:errors="*{description}"></span>
+            <div>
+                <label for="description">Descrição</label> <br>
+                <textarea id="description" name="description"
+                          rows="" cols=""  th:field="*{description}"></textarea>
+                <span th:errors="*{description}"></span>
+            </div>
 
-
-            <label for="points">Pontos</label>
-            <input type="range" name="points" id="points" min=10 max=500  th:field="*{points}">
-            <span th:errors="*{points}"></span>
+            <div>
+                <label for="points">Pontos</label> <br>
+                <input type="range" name="points" id="points" min=10 max=500  th:field="*{points}">
+                <span th:errors="*{points}"></span>
+            </div>
+            <br>
 
             <a href="/task">Cancelar</a>
             <button>Salvar</button>

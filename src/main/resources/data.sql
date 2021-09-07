@@ -28,3 +28,30 @@ INSERT INTO task (title, description, points) VALUES(
                                                         'Desenvolver protótipo de alta fidelidade',
                                                         80
                                                     );
+
+
+CREATE TABLE user (
+                      id bigint primary key auto_increment,
+                      name varchar(120),
+                      email varchar(120),
+                      password varchar(120)
+);
+
+
+INSERT INTO user (name, email, password) VALUES('Luis Robbo',
+                                                'luis@mail.com',
+                                                'LuisSenha123');
+
+INSERT INTO user (name, email, password) VALUES('Felipe Roque',
+                                                'fehroque@mail.com',
+                                                'felipe123');
+
+INSERT INTO user (name, email, password) VALUES('Lucas Padovani',
+                                                'lpadova@mail.com',
+                                                'lpadova1423');
+
+INSERT INTO user (name, email, password) VALUES('Lucas Kazuo',
+                                                'kazuo@mail.com',
+                                                'kazuoLucas123');
+
+
