@@ -22,6 +22,7 @@ public class StringUtils {
         Matcher matcher = pattern.matcher(usuario.getPassword());
         matcher.find();
 
+        System.out.println("teste")
         return matcher.matches();
     }
 }
